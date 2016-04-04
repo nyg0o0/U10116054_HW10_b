@@ -22,21 +22,27 @@ public class BubbleSort{
 			/* show the array before sorting */
 			System.out.print("The array before sorting: ");
 			for(int i = 0; i < arr.length; i++){
-				System.out.print(arr[i] + ","); 
+				System.out.print(arr[i] + " "); 
 			}
 			
 			/* sort the array */
-			int bubble;
-			for(int i = 0; i < arr.length; i++){
-				System.out.print(arr[i] + ","); 
+			int bubble,temp;
+			for(int i = arr.length ; i >= 2 ; i--){
+				for(int j = 0; j < i-1 ; j++){
+					if(arr[j] > arr[j+1]){
+						temp = arr[j];
+						arr[j] = arr[j+1];
+						arr[j+1] = temp;
+					}
+				}
 			}
+			
 			System.out.println(); 
 	 
-		   
 			/* show the array after sorting */
 			System.out.print("The array after sorting: "); 
 			for(int i = 0; i < arr.length; i++){
-				System.out.print(arr[i] + ",");
+				System.out.print(arr[i] + " ");
 			}
 		}
 } 
