@@ -15,6 +15,16 @@ public class BubbleSort{
 		}
 		
 		System.out.println("---------------------------------");
-
-    }
+		
+        System.out.print("The array before sorting: "); 
+        for(int i = 0; i < arr.length; i++) 
+            System.out.print(arr[i] + ","); 
+		System.out.println(); 
+ 
+       
+ 
+        System.out.print("The array after sorting: "); 
+        for(int i = 0; i < arr.length; i++) 
+            System.out.print(arr[i] + ",");
+		}
 } 
