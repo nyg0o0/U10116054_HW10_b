@@ -26,18 +26,18 @@ public class BubbleSort{
 			}
 			
 			/* sort the array */
-			int bubble,temp;
-			for(int i = arr.length ; i >= 2 ; i--){
+			for(int i = arr.length ; i >= 2 ; i--){	// check unsort part
 				for(int j = 0; j < i-1 ; j++){
-					if(arr[j] > arr[j+1]){
-						temp = arr[j];
+					if(arr[j] > arr[j+1]){	// if the fronter number is bigger
+						// swap
+						int temp = arr[j];
 						arr[j] = arr[j+1];
 						arr[j+1] = temp;
 					}
 				}
 			}
 			
-			System.out.println(); 
+			System.out.println();	// new line
 	 
 			/* show the array after sorting */
 			System.out.print("The array after sorting: "); 
